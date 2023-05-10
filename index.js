@@ -7,7 +7,8 @@ app.use(bodyParser.json())
 
 app.get(`/`, (request, response) => {
     const data = getAllEnvironment();
-    response.status(200).send(data)
+    
+    response.status(200).send(data);
 })
 
 app.get(`/:id`, (request, response) => {
